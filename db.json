@@ -1,0 +1,114 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "gaurav@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "7a18",
+      "email": "gaurav.sandhan01@gmail.com",
+      "password": "12345",
+      "name": "Gaurav Sandhan"
+    },
+    {
+      "id": "674b",
+      "name": "Tanmay",
+      "email": "gauravsandhan98@gmail.com",
+      "password": "12345"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "1",
+      "userId": 1,
+      "name": "Physics",
+      "progress": 75,
+      "notes": 12,
+      "tests": 5,
+      "tasks": 3
+    },
+    {
+      "id": "2",
+      "userId": 1,
+      "name": "Chemistry",
+      "progress": 60,
+      "notes": 10,
+      "tests": 4,
+      "tasks": 2
+    },
+    {
+      "id": "d39d",
+      "userId": "7a18",
+      "name": "Physics",
+      "progress": 0,
+      "notes": 0,
+      "tests": 0,
+      "tasks": 0
+    },
+    {
+      "id": "b432",
+      "userId": "7a18",
+      "name": "Chemistry",
+      "progress": 50,
+      "notes": 0,
+      "tests": 0,
+      "tasks": 0
+    },
+    {
+      "id": "0bdd",
+      "userId": "7a18",
+      "name": "Mathematics",
+      "progress": 52,
+      "notes": 5,
+      "tests": 0,
+      "tasks": 0
+    },
+    {
+      "id": "dc38",
+      "userId": "7a18",
+      "name": "Biology",
+      "progress": 0,
+      "notes": 0,
+      "tests": 0,
+      "tasks": 0
+    },
+    {
+      "id": "4d5c",
+      "userId": "674b",
+      "name": "Physics",
+      "progress": 0,
+      "notes": 0,
+      "tests": 0,
+      "tasks": 0
+    },
+    {
+      "id": "d834",
+      "userId": "674b",
+      "name": "Chemistry",
+      "progress": 0,
+      "notes": 0,
+      "tests": 0,
+      "tasks": 0
+    },
+    {
+      "id": "c01b",
+      "userId": "674b",
+      "name": "Mathematics",
+      "progress": 0,
+      "notes": 0,
+      "tests": 0,
+      "tasks": 0
+    },
+    {
+      "id": "50fb",
+      "userId": "674b",
+      "name": "Biology",
+      "progress": 0,
+      "notes": 0,
+      "tests": 0,
+      "tasks": 0
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

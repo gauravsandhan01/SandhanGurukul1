@@ -1,0 +1,98 @@
+<!-- TOP HEADER -->
+<div class="dashboard-header">
+  <div class="left">
+    🎓 Dashboard
+  </div>
+
+  <div class="right">
+    Hi, Student | <span class="logout" routerLink="/home">Logout</span>
+  </div>
+</div>
+
+
+<!-- STUDENT PROFILE CARD -->
+<div class="profile-card">
+
+  <div class="profile-left">
+    <div class="avatar">👤</div>
+
+    <div>
+    <h2 style="margin-left: 0px;">{{u.name}}</h2>
+    <p>Roll No: {{u.id}}</p> 
+    <p>{{u.email}}</p>
+    </div>
+  </div>
+
+  <div class="profile-right">
+    <p>Overall Progress</p>
+    <h2 class="progress">{{overallProgress}}%</h2>
+  </div>
+
+</div>
+
+
+<!-- TABS -->
+<div class="tabs">
+  <div class="tabs">
+  <button routerLink="/dashboard" routerLinkActive="active">Overview</button>
+
+  <button routerLink="/subject" routerLinkActive="active">
+    Subjects
+  </button>
+
+  <button routerLink="" routerLinkActive="active">
+    Tests
+  </button>
+
+  <button routerLink="" routerLinkActive="active">
+    Alerts
+  </button>
+</div>
+</div>
+
+
+<!-- STATS CARDS -->
+<div class="stats">
+
+  <div class="stat-card">
+    <h3>4</h3>
+    <p>Subjects</p>
+  </div>
+
+  <div class="stat-card">
+    <h3>18</h3>
+    <p>Tests Taken</p>
+  </div>
+
+  <div class="stat-card">
+    <h3>45</h3>
+    <p>Notes Available</p>
+  </div>
+
+  <div class="stat-card">
+    <h3>78%</h3>
+    <p>Avg Score</p>
+  </div>
+
+</div>
+
+
+
+<h2>Subjects</h2>
+
+<div class="subject-grid">
+
+<div class="card" *ngFor="let s of subjects">
+
+<h3>{{s.name}}</h3>
+
+<div class="progress-bar">
+<div class="progress" [style.width.%]="s.progress"></div>
+</div>
+
+<p>{{s.notes}} Notes | {{s.tests}} Tests | {{s.tasks}} Tasks</p>
+
+</div>
+
+</div>
+

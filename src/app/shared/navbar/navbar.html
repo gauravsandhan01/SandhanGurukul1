@@ -1,0 +1,29 @@
+<nav class="navbar">
+
+  <!-- Logo -->
+  <div class="logo">
+    <span class="icon">🎓</span>
+    <span class="brand">Sandhan Gurukul</span>
+  </div>
+
+  <!-- Menu -->
+  <ul class="nav-links" [class.mobile-menu]="menuOpen">
+    <li><a routerLink="/" (click)="closeMenu()">Home</a></li>
+    <li><a routerLink="/about" (click)="closeMenu()">About Us</a></li>
+    <li><a routerLink="/achievement" (click)="closeMenu()">Our Achievement</a></li>
+    <li><a routerLink="/services" (click)="closeMenu()">Services</a></li>
+    <li><a routerLink="/contact" (click)="closeMenu()">Contact Us</a></li>
+
+  </ul>
+
+  <!-- Desktop login button -->
+  <div class="login-btn">
+    <a routerLink="/login">Login</a>
+  </div>
+
+  <!-- Hamburger -->
+  <div class="hamburger" (click)="toggleMenu()">
+    ☰
+  </div>
+
+</nav>

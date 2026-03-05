@@ -1,0 +1,111 @@
+/* Navbar main */
+.navbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 60px;
+  background:#ffffff;
+  box-shadow:0 2px 8px rgba(0,0,0,0.05);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+/* Logo */
+.logo{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-weight:600;
+  font-size:20px;
+  color:#1f5ed6;
+}
+
+.icon{
+  font-size:22px;
+}
+
+/* Menu */
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:28px;
+  margin:0;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#6b7280;
+  font-size:20px;
+  font-weight: 900;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#1f5ed6;
+}
+
+/* Active link */
+.active{
+  background:#e7f0ff;
+  padding:6px 12px;
+  border-radius:8px;
+  color:#1f5ed6 !important;
+}
+
+/* Login button */
+.login-btn a{
+  background:#1f5ed6;
+  color:white;
+  padding:8px 18px;
+  border-radius:8px;
+  text-decoration:none;
+  font-size:14px;
+  transition:0.3s;
+}
+
+.login-btn a:hover{
+  background:#0f4ad1;
+}
+
+/* Existing styles remain same */
+
+/* Hamburger hidden on desktop */
+.hamburger{
+  display:none;
+  font-size:24px;
+  cursor:pointer;
+}
+
+/* Mobile styles */
+@media(max-width:768px){
+
+  .nav-links{
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:white;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    padding:20px 0;
+    display:none;
+  }
+
+  .nav-links.mobile-menu{
+    display:flex;
+  }
+
+  .login-btn{
+    display:none;
+  }
+
+  .mobile-login{
+    display:block;
+  }
+
+  .hamburger{
+    display:block;
+  }
+}

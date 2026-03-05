@@ -1,0 +1,23 @@
+
+<h2>Subjects</h2>
+
+<div class="subject-grid">
+
+<div class="card" *ngFor="let s of subjects">
+
+<h3>{{s.name}}</h3> 
+<!-- subject name  -->
+
+<div class="progress-bar">
+<div class="progress" [style.width.%]="s.progress"></div>
+</div>
+
+<p>{{s.notes}} Notes | {{s.tests}} Tests | {{s.tasks}} Tasks</p>
+<!-- subjet notes   subject test    subject task -->
+
+<button>Notes</button>
+<button>Start Test</button>
+
+</div>
+
+</div>

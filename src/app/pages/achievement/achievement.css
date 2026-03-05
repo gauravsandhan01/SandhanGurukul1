@@ -1,0 +1,97 @@
+/* HERO */
+.achievement-hero{
+  background:linear-gradient(135deg,#1f5ed6,#4f8df7);
+  color:white;
+  text-align:center;
+  padding:80px 20px;
+}
+
+.achievement-hero h1{
+  font-size:38px;
+}
+
+.achievement-hero p{
+  margin-top:10px;
+}
+
+/* STATS */
+.stats-section{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  padding:60px 40px;
+  background:#f5f7fb;
+  flex-wrap:wrap;
+}
+
+.stat-card{
+  background:white;
+  padding:25px;
+  width:220px;
+  text-align:center;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.stat-card:hover{
+  transform:translateY(-6px);
+}
+
+.icon{
+  font-size:28px;
+  margin-bottom:10px;
+}
+
+/* RANKERS */
+.rankers-section{
+  padding:60px;
+  background:#e9eef6;
+}
+
+.rankers-section h2{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.rankers-container{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.ranker-card{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  display:flex;
+  gap:15px;
+  align-items:center;
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.rank-icon{
+  font-size:24px;
+}
+
+.highlight{
+  color:#1f5ed6;
+  font-weight:600;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .rankers-container{
+    grid-template-columns:1fr;
+  }
+
+  .stats-section{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .achievement-hero h1{
+    font-size:28px;
+  }
+}
