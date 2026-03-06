@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class Subject {
 
- apiUrl = "http://localhost:3000/subjects";
+ apiUrl = "https://server-o4sj.onrender.com/subjects";
 
   constructor(private http:HttpClient){}
 
@@ -18,7 +18,7 @@ export class Subject {
   }
 
   getSubjectsByUser(userId:any){
-  return this.http.get<any>(`http://localhost:3000/subjects?userId=${userId}`);
+  return this.http.get<any>(`https://server-o4sj.onrender.com/subjects?userId=${userId}`);
 }
 
 }

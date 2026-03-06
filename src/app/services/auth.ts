@@ -4,19 +4,19 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class Auth {
-  apiUrl = "http://localhost:3000/users";
+  apiUrl = "https://server-o4sj.onrender.com/users";
 
   constructor(private http: HttpClient) {}
 
  registerUser(data:any){
-  return this.http.post("http://localhost:3000/users",data);
+  return this.http.post("https://server-o4sj.onrender.com/users",data);
 }
   getUsers(){
     return this.http.get<any>(this.apiUrl);
   }
 
   addSubject(data:any){
-  return this.http.post("http://localhost:3000/subjects",data);
+  return this.http.post("https://server-o4sj.onrender.com/subjects",data);
 }
   
 }
